@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: url('back3.jpg');
+    background-size: 100%;
+}
+/*Navigation Bar*/
+.navbar{
+    background-color: black;
+    height: 8vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.logo img{
+    margin-left:2vb ;
+    filter: invert(1);
+    height:8vh;
+    width:8vb;
+}
+.wname{
+    color: white;
+    margin-left: 2vb;
+}
+.search{
+    display: flex;
+}
+.search input{
+    margin-left: 4vb;
+    width: 40vb;
+    height: 4vh;
+    font-size: 1.2rem;
+    border: transparent;
+    outline: none;
+}
+.search button{
+    border:transparent;
+    border-top-right-radius:3px;
+    border-BOTTOM-right-radius:3px;
+    background-color: rgb(255, 230, 0);
+    cursor: pointer;
+}
+.search button:hover{
+    color: white;
+    background:rgb(173, 173, 173);
+}
+.icon{
+    font-weight: 100;
+    font-size: 1rem;
+    padding: 0.7vh;
+}
+.list ul{
+    display: flex;
+    width: 135vb;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style: none;
+    font-size: 1.4rem;
+  }
+  .list li a{
+    color: white;
+    text-decoration: none;
+ }
+  .list li a:hover{
+    color: grey;
+    text-decoration: underline;
+}
+  /*Hero section*/
+.hero{
+    display: inline-block;
+    padding: 12vh 6vh 12vh 6vh;
+    filter: drop-shadow(2px 4px 6px black);
+    margin-top: 10%;
+    margin-left: 32%;
+    font-size: 1.5rem;
+    color:white;
+}
+ .heading{
+    display: inline;
+}
+.name{
+    display: inline;
+    color: yellow;
+}
+  /*Footer*/
+  .foot{
+    position: absolute;
+    background: black;
+    color: white;
+    padding: 0.8vb;
+    bottom: 0px;
+    width: 99.25%;
+    text-align: center;
+  }

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>About us</title>
+    <script src="jquery.min.js"></script>
+    <style>
+      *{
+        margin: 0;
+        padding: 0;
+      }
+      td,th{
+        width: 200px;
+        color: white;
+        font-size: 2rem;
+        text-align: right;
+       }
+      th{
+        color: black;
+        background-color: rgb(223 226 232)     
+       }
+      table{
+        border-spacing: 0px;
+      }
+      body{
+        background: url('back3.jpg');
+        background-size: 100%;
+       }
+       .charge{
+        display: flex;
+        justify-content: center;
+        margin-top: 70px;
+        }
+        #det{
+            width: 300px;
+            text-align: left;
+            padding-left: 10px;
+            color:yellow;
+        }
+  </style>
+  </head>
+  <body>
+    <h2 style="padding: 6px;color: white; width: 99.25%;background-color: black;text-align: center;font-size: 2rem;">About us</h2>
+    <div class="charge">
+    <table id="data">
+    </table>
+  </div>
+  <script>
+    $(document).ready(function(){
+        $.getJSON('About.json',function(data){
+            $.each(data,function(key,value){
+                $('#data').append( '<tr><td>'+value.Q+'</td><td id="det">'+value.det+'</td></tr>');
+            });
+        });
+    });
+    </script>
+  </body>
+</html>

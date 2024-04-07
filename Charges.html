@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Charges</title>
+    <style>
+      *{
+        margin: 0;
+        padding: 0;
+      }
+      td,th{
+        border: 1px solid white;
+        width: 350px;
+        color: white;
+        text-align: center;
+        font-size: 2rem;
+        padding: 21.5px;
+       }
+      th{
+        color: black;
+        background-color: rgb(223 226 232)     
+       }
+      table{
+        border-spacing: 0px;
+      }
+      body{
+        background: url('back3.jpg');
+        background-size: 100%;
+       }
+       .charge{
+        display: flex;
+        justify-content: center;
+        }
+  </style>
+  </head>
+  <body onload="loadxml()">
+    <div class="charge">
+    <table id="data">
+      <tr>
+        <th>Service</th>
+        <th>Charges</th>
+      </tr>
+    </table>
+  </div>
+    <script>
+      let dk = new XMLHttpRequest();
+      function loadxml() {
+        let res,i,inf,dt = "";
+        dk.onreadystatechange = function () {
+          if (this.status == 200 && this.readyState == 4) {
+            res = this.responseXML;
+            inf = res.getElementsByTagName("charge");
+            for (i = 0; i < inf.length; i++) {
+              dt +=
+                "<tr><td>" +
+                inf[i].getElementsByTagName("name")[0].childNodes[0].nodeValue +
+                "</td><td> "+
+                inf[i].getElementsByTagName("price")[0].childNodes[0]
+                  .nodeValue +
+                "</td></tr>";
+            }
+            document.getElementById("data").innerHTML += dt;
+          }
+        };
+        dk.open("GET", "charges.xml", true);
+        dk.send();
+      }
+    </script>
+  </body>
+</html>

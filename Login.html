@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        .data{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            color: white;
+        }
+        .form{
+            display: flex;
+            justify-content: center;
+            margin-top: 14%;
+            border: 1px solid black;
+            padding: 8vh;
+            padding-top: 3vh;
+            width: 15%;
+            margin-left: 38%;
+            background-color: rgba(128, 128, 128, 0.295);
+    filter: drop-shadow(2px 4px 6px black);
+        }
+        #btn{
+            margin-top: 2vh;
+            font-size: 1rem;
+        }
+        body{
+            background: url("back3.jpg");
+            background-size: 100%;
+        }
+        .in{
+            outline: none;
+            border:none;
+            border-bottom: 1px solid black;
+            background: transparent;
+            color: rgb(146, 146, 146);
+        }
+        .passw{
+            margin-top: -15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="form">
+        <form class="data">
+            <CENTER><H2 style="font-size: 2.4rem;">Login</H2></CENTER>
+            Username<input type="text" name="user" class="in">
+            <p>Password</p><input type="password" name="pass" class="in passw">
+            <input type="submit" value="Login" name="logbtn" id="btn" style="cursor: pointer;">
+        </form>
+    </div>
+</body>
+</html>

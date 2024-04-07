@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<data>
+<charge>
+<name>Wedding Photoshoot</name>
+<price>20000 to 100000</price>
+</charge>
+<charge>
+<name>Events Photoshoot</name>
+<price>30000 to 150000</price>
+</charge>
+<charge>
+<name>Commercial Photoshoot</name>
+<price>40000 to 100000</price>
+</charge>
+<charge>
+<name>Outdoor Photoshoot</name>
+<price>10000 to 20000</price>
+</charge>
+<charge>
+<name>Indoor Photoshoot</name>
+<price>10000 to 25000</price>
+</charge>
+<charge>
+<name>Model Photoshoot</name>
+<price>5000 to 10000</price>
+</charge>
+<charge>
+<name>Editing</name>
+<price>According to work</price>
+</charge>
+<charge>
+<name>Family Photoshoot</name>
+<price>Depend on Photos</price>
+</charge>
+</data>
+
